@@ -2,3 +2,5 @@
 
 Neste espaço, você encontrará todos os recursos necessários para acompanhar e contribuir para o desenvolvimento dos testes de sistemas. 
 Aqui, estamos comprometidos em explorar e aprofundar os conceitos, técnicas e ferramentas fundamentais para garantir a qualidade do software por meio de testes eficazes.
+
+- JUnit5-Pratica01 (Primeira Prática com JUnit5 - Calculadora)
