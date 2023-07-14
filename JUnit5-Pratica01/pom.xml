@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.edu.ipog</groupId>
+	<artifactId>JUnit5-Pratica01</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<java.version>11</java.version>
+		<junit-jupiter-api.version>5.9.3</junit-jupiter-api.version>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.targeet>${java.version}</maven.compiler.targeet>
+	</properties>
+	<dependencies>
+		<!--
+		https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>${junit-jupiter-api.version}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>
