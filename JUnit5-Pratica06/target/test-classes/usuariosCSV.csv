@@ -1,0 +1,4 @@
+Id, Nome, Email, Senha, Msn
+1, null, nome@email.com, 123456, Nome é Obrigatório
+1, Nome do Usuário, null, 123456, E-mail é Obrigatório
+1, Nome do Usuário, nome@email.com, null, Senha é Obrigatória
