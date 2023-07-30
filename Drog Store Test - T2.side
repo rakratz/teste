@@ -1,0 +1,238 @@
+{
+  "id": "3fa3d44c-b620-438e-8790-c26167525149",
+  "version": "2.0",
+  "name": "Drog Store Test",
+  "url": "http://demostore.supersqa.com/",
+  "tests": [{
+    "id": "38f89205-7296-455d-94a8-4a846aa77ad0",
+    "name": "T1",
+    "commands": [{
+      "id": "f5842c80-ac49-42d0-a5e3-88ed6faf49bc",
+      "comment": "Abrir página de login",
+      "command": "open",
+      "target": "http://demostore.supersqa.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c366c4f-5b72-44d7-b889-2cdda091b9da",
+      "comment": "Maximizar",
+      "command": "setWindowSize",
+      "target": "1676x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d132364-69d6-47f8-ae83-e366bf184684",
+      "comment": "Abrir Conta",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'My account')]",
+      "targets": [
+        ["linkText=My account", "linkText"],
+        ["css=.focus > a", "css:finder"],
+        ["xpath=//a[contains(text(),'My account')]", "xpath:link"],
+        ["xpath=//nav[@id='site-navigation']/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://demostore.supersqa.com/my-account/']", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fac786f6-b3a2-4519-b596-cd7c0f68eab4",
+      "comment": "Preencher campo de usuário",
+      "command": "type",
+      "target": "id=reg_email",
+      "targets": [
+        ["id=reg_email", "id"],
+        ["name=email", "name"],
+        ["css=#reg_email", "css:finder"],
+        ["xpath=//input[@id='reg_email']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div[2]/form/p/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/p/input", "xpath:position"]
+      ],
+      "value": "Teste8@teste.com"
+    }, {
+      "id": "1fc18d55-6613-4f5f-b217-2a29f0442c2e",
+      "comment": "Preencher campo de senha",
+      "command": "type",
+      "target": "id=reg_password",
+      "targets": [
+        ["id=reg_password", "id"],
+        ["css=#reg_password", "css:finder"],
+        ["xpath=//input[@id='reg_password']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div[2]/form/p[2]/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/p[2]/span/input", "xpath:position"]
+      ],
+      "value": "Teste@1010"
+    }, {
+      "id": "5f74caf0-9e93-4fdb-a3c2-28d985d41ce1",
+      "comment": "Clicar no botão \"Reegister\"",
+      "command": "click",
+      "target": "name=register",
+      "targets": [
+        ["name=register", "name"],
+        ["css=.woocommerce-Button", "css:finder"],
+        ["xpath=//button[@name='register']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div[2]/form/p[3]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/form/p[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "03c41434-ea4d-431d-af70-2f3733c3d741",
+      "comment": "Pausa 10ms",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "10"
+    }, {
+      "id": "86c68d45-86f6-4efd-bd2a-8fba4ca139b1",
+      "comment": "Clicar no botão \"Logout\"",
+      "command": "click",
+      "target": "css=.woocommerce-MyAccount-navigation-link--customer-logout > a",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.woocommerce-MyAccount-navigation-link--customer-logout > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//article[@id='post-9']/div/div/nav/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://demostore.supersqa.com/my-account/customer-logout/?_wpnonce=3c6db3b226']", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "214cdf06-906e-43d3-9c81-98e02badd23d",
+    "name": "T2",
+    "commands": [{
+      "id": "e3e69d5d-a3db-4d32-9f2f-74af4c0e90bc",
+      "comment": "",
+      "command": "open",
+      "target": "http://demostore.supersqa.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2c72a75-6948-4562-b583-033f5336664d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1676x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "36ce270d-9e02-4ce0-9e7c-43bde5411399",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My account",
+      "targets": [
+        ["linkText=My account", "linkText"],
+        ["css=.focus > a", "css:finder"],
+        ["xpath=//a[contains(text(),'My account')]", "xpath:link"],
+        ["xpath=//nav[@id='site-navigation']/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://demostore.supersqa.com/my-account/']", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "565808d0-37a4-4e82-afde-eb7ad1e65f46",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "990fefd9-30ab-4513-a6ee-a25266a10089",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "teste6@teste.com"
+    }, {
+      "id": "1871cd2a-94c7-4231-8ea8-46cfb546eb04",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "Teste@1010"
+    }, {
+      "id": "a0132506-2c2a-4068-a66b-d9a757ad0620",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.woocommerce-form-login__submit", "css:finder"],
+        ["xpath=//button[@name='login']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p[3]/button", "xpath:idRelative"],
+        ["xpath=//p[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "94e62937-8442-48dd-bca2-2bddebec3a53",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.woocommerce-MyAccount-navigation-link--customer-logout > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//article[@id='post-9']/div/div/nav/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://demostore.supersqa.com/my-account/customer-logout/?_wpnonce=e8bce046ac']", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e93a561-949f-4573-af60-ed07410a2eee",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39e38d1d-e89e-48b0-abe9-6690dd745d87",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=username",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "189c8b25-8452-4496-8f8a-20449b5c971e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["38f89205-7296-455d-94a8-4a846aa77ad0"]
+  }],
+  "urls": ["http://demostore.supersqa.com/"],
+  "plugins": []
+}
