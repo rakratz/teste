@@ -1,0 +1,22 @@
+{
+    "name": "kratz/php-unit-user",
+    "description": "Teste de Usuario",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+    "autoload-dev":{
+        "psr-4": {
+            "tests\\":"tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ricardo Kratz"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^10.2"
+    }
+}
