@@ -5,13 +5,15 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TestAssertions {
 
-    @Test
-    public void testEqualsIgnoreCase() {
-        String str1 = "Hello";
-        String str2 = "hello";
-        assertEqualsIgnoreCase(str1, str2);
-        // Espera-se que as strings sejam iguais, independentemente do caso das letras
-    }
+	@Test
+	public void testEqualsIgnoreCase() {
+		String str1 = "Hello";
+		String str2 = "hello";
+		
+		assertTrue(str1.equalsIgnoreCase(str2));
+		// assertTrue verifica se é verdadeido
+		// Espera-se que as strings sejam iguais, independentemente do caso das letras
+	}
 
     @Test
     public void testAssertTrue() {
@@ -91,4 +93,5 @@ public class TestAssertions {
         assertTrue(str1.equalsIgnoreCase(str2));
     }
 }
+
 
